@@ -1,0 +1,72 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: Radio Mast API — Radio Stations
+  description: 'Radio Mast API — Radio Stations. 1 operations. Lead operation: List radio stations. Self-contained Naftiko
+    capability covering one Radio Mast business surface.'
+  tags:
+  - Radio Mast
+  - Radio Stations
+  created: '2026-05-19'
+  modified: '2026-05-19'
+binds:
+- namespace: env
+  keys:
+    RADIO_MAST_API_KEY: RADIO_MAST_API_KEY
+capability:
+  consumes:
+  - type: http
+    namespace: radio-mast-radio-stations
+    baseUri: https://api.radiomast.io/v1
+    description: Radio Mast API — Radio Stations business capability. Self-contained, no shared references.
+    resources:
+    - name: radiostations
+      path: /radiostations/
+      operations:
+      - name: get
+        method: GET
+        description: List radio stations
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    authentication:
+      type: apikey
+      key: Authorization
+      value: '{{env.RADIO_MAST_API_KEY}}'
+      placement: header
+  exposes:
+  - type: rest
+    namespace: radio-mast-radio-stations-rest
+    port: 8080
+    description: REST adapter for Radio Mast API — Radio Stations. One Spectral-compliant resource per consumed operation,
+      prefixed with /v1.
+    resources:
+    - path: /v1/radiostations
+      name: radiostations
+      description: REST surface for radiostations.
+      operations:
+      - method: GET
+        name: get
+        description: List radio stations
+        call: radio-mast-radio-stations.get
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    namespace: radio-mast-radio-stations-mcp
+    port: 9090
+    transport: http
+    description: MCP adapter for Radio Mast API — Radio Stations. One tool per consumed operation, routed inline through this
+      capability's consumes block.
+    tools:
+    - name: list-radio-stations
+      description: List radio stations
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: radio-mast-radio-stations.get
+      outputParameters:
+      - type: object
+        mapping: $.

@@ -1,0 +1,72 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: Radio Mast API — Listener Pools
+  description: 'Radio Mast API — Listener Pools. 1 operations. Lead operation: List listener pools. Self-contained Naftiko
+    capability covering one Radio Mast business surface.'
+  tags:
+  - Radio Mast
+  - Listener Pools
+  created: '2026-05-19'
+  modified: '2026-05-19'
+binds:
+- namespace: env
+  keys:
+    RADIO_MAST_API_KEY: RADIO_MAST_API_KEY
+capability:
+  consumes:
+  - type: http
+    namespace: radio-mast-listener-pools
+    baseUri: https://api.radiomast.io/v1
+    description: Radio Mast API — Listener Pools business capability. Self-contained, no shared references.
+    resources:
+    - name: listener-pools
+      path: /listener-pools/
+      operations:
+      - name: get
+        method: GET
+        description: List listener pools
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+    authentication:
+      type: apikey
+      key: Authorization
+      value: '{{env.RADIO_MAST_API_KEY}}'
+      placement: header
+  exposes:
+  - type: rest
+    namespace: radio-mast-listener-pools-rest
+    port: 8080
+    description: REST adapter for Radio Mast API — Listener Pools. One Spectral-compliant resource per consumed operation,
+      prefixed with /v1.
+    resources:
+    - path: /v1/listener-pools
+      name: listener-pools
+      description: REST surface for listener-pools.
+      operations:
+      - method: GET
+        name: get
+        description: List listener pools
+        call: radio-mast-listener-pools.get
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    namespace: radio-mast-listener-pools-mcp
+    port: 9090
+    transport: http
+    description: MCP adapter for Radio Mast API — Listener Pools. One tool per consumed operation, routed inline through this
+      capability's consumes block.
+    tools:
+    - name: list-listener-pools
+      description: List listener pools
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: radio-mast-listener-pools.get
+      outputParameters:
+      - type: object
+        mapping: $.
