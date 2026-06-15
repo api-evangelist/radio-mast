@@ -1,6 +1,7 @@
 aid: radio-mast
 name: Radio Mast
-description: The Radio Mast API allows you to integrate Radio Mast functionality into your app or website, including streaming
+description: >-
+  The Radio Mast API allows you to integrate Radio Mast functionality into your app or website, including streaming
   network management, stream monitoring, listener analytics, and encoder credentials.
 type: Index
 position: Consumer
@@ -24,30 +25,21 @@ common:
 apis:
   - aid: radio-mast:radio-mast
     name: Radio Mast
-    description: The Radio Mast API allows you to integrate Radio Mast functionality into your app or website, including streaming
+    description: >-
+      The Radio Mast API allows you to integrate Radio Mast functionality into your app or website, including streaming
       network management, stream monitoring, listener analytics, and encoder credentials.
     humanURL: https://www.radiomast.io/docs/api/
     baseURL: https://api.radiomast.io/v1
     tags:
-    - Radio
-    - Streaming
-    - Analytics
-    - Broadcasting
+      - Radio
+      - Streaming
+      - Analytics
+      - Broadcasting
     properties:
-    - type: Documentation
-      url: https://www.radiomast.io/docs/api/
-    - type: OpenAPI
-      url: https://raw.githubusercontent.com/api-evangelist/radio-mast/refs/heads/main/openapi/radio-mast-openapi.yml
-    - type: NaftikoCapability
-      url: capabilities/radio-mast-general.yaml
-    - type: NaftikoCapability
-      url: capabilities/radio-mast-analytics.yaml
-    - type: NaftikoCapability
-      url: capabilities/radio-mast-listener-pools.yaml
-    - type: NaftikoCapability
-      url: capabilities/radio-mast-radio-stations.yaml
-    - type: NaftikoCapability
-      url: capabilities/radio-mast-radio-streams.yaml
+      - type: Documentation
+        url: https://www.radiomast.io/docs/api/
+      - type: OpenAPI
+        url: https://raw.githubusercontent.com/api-evangelist/radio-mast/refs/heads/main/openapi/radio-mast-openapi.yml
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com

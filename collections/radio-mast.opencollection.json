@@ -1,0 +1,146 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Radio Mast API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "Authorization",
+      "value": "{{Authorization}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Default",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List available API resources",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.radiomast.io/v1/"
+          },
+          "docs": "List available API resources"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Radio Streams",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List Radio Mast streams",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.radiomast.io/v1/radiostreams/radiomast/"
+          },
+          "docs": "List Radio Mast streams"
+        },
+        {
+          "info": {
+            "name": "List external streams",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.radiomast.io/v1/radiostreams/external/"
+          },
+          "docs": "List external streams"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Radio Stations",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List radio stations",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.radiomast.io/v1/radiostations/"
+          },
+          "docs": "List radio stations"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Analytics",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Listener session time-series analytics",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.radiomast.io/v1/analytics/listener-sessions/time-series/"
+          },
+          "docs": "Listener session time-series analytics"
+        },
+        {
+          "info": {
+            "name": "Aggregate listener session analytics",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.radiomast.io/v1/analytics/listener-sessions/aggregate/"
+          },
+          "docs": "Aggregate listener session analytics"
+        },
+        {
+          "info": {
+            "name": "Listener analytics reports",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.radiomast.io/v1/analytics/reports/"
+          },
+          "docs": "Listener analytics reports"
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Listener Pools",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List listener pools",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.radiomast.io/v1/listener-pools/"
+          },
+          "docs": "List listener pools"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
