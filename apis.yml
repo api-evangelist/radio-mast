@@ -18,10 +18,16 @@ modified: '2026-05-19'
 url: https://raw.githubusercontent.com/api-evangelist/radio-mast/refs/heads/main/apis.yml
 specificationVersion: '0.19'
 common:
+  - type: DomainSecurity
+    url: security/radio-mast-domain-security.yml
+  - type: Authentication
+    url: authentication/radio-mast-authentication.yml
   - type: GitHubOrganization
     url: https://github.com/radiomastinc
   - type: LinkedIn
     url: https://www.linkedin.com/company/radiomast
+  - url: https://www.radiomast.io/blog
+    type: Blog
 apis:
   - aid: radio-mast:radio-mast
     name: Radio Mast

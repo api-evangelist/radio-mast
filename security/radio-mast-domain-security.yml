@@ -1,0 +1,21 @@
+generated: '2026-07-11'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.radiomast.io
+  https: true
+  tls_version: TLSv1.2
+  cert_expires: Sep 11 20:23:13 2026 GMT
+  hsts: false
+- host: api.radiomast.io
+  https: true
+  tls_version: TLSv1.2
+  cert_expires: Aug 12 14:07:21 2026 GMT
+  hsts: false
+domains:
+- domain: radiomast.io
+  dnssec: true
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: quarantine
