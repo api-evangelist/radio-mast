@@ -1,0 +1,14 @@
+{
+  "repo": "radio-mast",
+  "feeds": [
+    {
+      "source": "https://www.radiomast.io/blog",
+      "feed_url": "https://www.radiomast.io/blog/feeds/all.atom.xml",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
+    }
+  ],
+  "fetched": "2026-07-11T11:50:51Z",
+  "post_count": 3
+}
