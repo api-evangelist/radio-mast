@@ -18,6 +18,8 @@ modified: '2026-05-19'
 url: https://raw.githubusercontent.com/api-evangelist/radio-mast/refs/heads/main/apis.yml
 specificationVersion: '0.19'
 common:
+  - type: AgenticAccess
+    url: agentic-access/radio-mast-agentic-access.yml
   - type: DomainSecurity
     url: security/radio-mast-domain-security.yml
   - type: Authentication
