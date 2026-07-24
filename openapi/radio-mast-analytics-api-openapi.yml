@@ -1,0 +1,46 @@
+openapi: 3.0.3
+info:
+  title: Radio Mast Analytics API
+  description: The Radio Mast API allows you to integrate Radio Mast functionality into your app or website, including streaming network management, stream monitoring, listener analytics, and encoder credentials.
+  version: '1.0'
+  contact:
+    name: Radio Mast
+    url: https://www.radiomast.io/docs/api/
+servers:
+- url: https://api.radiomast.io/v1
+  description: Radio Mast production API
+security:
+- ApiKeyAuth: []
+tags:
+- name: Analytics
+paths:
+  /analytics/listener-sessions/time-series/:
+    get:
+      tags:
+      - Analytics
+      summary: Listener session time-series analytics
+      responses:
+        '200':
+          description: Time-series analytics data
+  /analytics/listener-sessions/aggregate/:
+    get:
+      tags:
+      - Analytics
+      summary: Aggregate listener session analytics
+      responses:
+        '200':
+          description: Aggregate analytics data
+  /analytics/reports/:
+    get:
+      tags:
+      - Analytics
+      summary: Listener analytics reports
+      responses:
+        '200':
+          description: Analytics reports
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: Authorization

@@ -1,0 +1,30 @@
+openapi: 3.0.3
+info:
+  title: Radio Mast Analytics Listener Pools API
+  description: The Radio Mast API allows you to integrate Radio Mast functionality into your app or website, including streaming network management, stream monitoring, listener analytics, and encoder credentials.
+  version: '1.0'
+  contact:
+    name: Radio Mast
+    url: https://www.radiomast.io/docs/api/
+servers:
+- url: https://api.radiomast.io/v1
+  description: Radio Mast production API
+security:
+- ApiKeyAuth: []
+tags:
+- name: Listener Pools
+paths:
+  /listener-pools/:
+    get:
+      tags:
+      - Listener Pools
+      summary: List listener pools
+      responses:
+        '200':
+          description: List of listener pools
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: Authorization
