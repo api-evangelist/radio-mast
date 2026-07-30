@@ -4,9 +4,22 @@ description: >-
   The Radio Mast API allows you to integrate Radio Mast functionality into your app or website, including streaming
   network management, stream monitoring, listener analytics, and encoder credentials.
 type: Index
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 position: Consumer
 access: 3rd-Party
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/radio-mast.png
 tags:
   - Radio
   - Streaming
@@ -31,23 +44,66 @@ common:
   - url: https://www.radiomast.io/blog
     type: Blog
 apis:
-  - aid: radio-mast:radio-mast
-    name: Radio Mast
-    description: >-
-      The Radio Mast API allows you to integrate Radio Mast functionality into your app or website, including streaming
-      network management, stream monitoring, listener analytics, and encoder credentials.
-    humanURL: https://www.radiomast.io/docs/api/
-    baseURL: https://api.radiomast.io/v1
-    tags:
-      - Radio
-      - Streaming
-      - Analytics
-      - Broadcasting
-    properties:
-      - type: Documentation
-        url: https://www.radiomast.io/docs/api/
-      - type: OpenAPI
-        url: https://raw.githubusercontent.com/api-evangelist/radio-mast/refs/heads/main/openapi/radio-mast-openapi.yml
+- aid: radio-mast:radio-mast-analytics-api
+  name: Radio Mast Analytics API
+  description: The Analytics API from Radio Mast — 3 operation(s) for analytics.
+  humanURL: https://www.radiomast.io/docs/api/
+  baseURL: https://api.radiomast.io/v1
+  tags:
+  - Analytics
+  properties:
+  - type: OpenAPI
+    url: openapi/radio-mast-analytics-api-openapi.yml
+  - type: Documentation
+    url: https://www.radiomast.io/docs/api/
+- aid: radio-mast:radio-mast-listener-pools-api
+  name: Radio Mast Listener Pools API
+  description: The Listener Pools API from Radio Mast — 1 operation(s) for listener pools.
+  humanURL: https://www.radiomast.io/docs/api/
+  baseURL: https://api.radiomast.io/v1
+  tags:
+  - Listener Pools
+  properties:
+  - type: OpenAPI
+    url: openapi/radio-mast-listener-pools-api-openapi.yml
+  - type: Documentation
+    url: https://www.radiomast.io/docs/api/
+- aid: radio-mast:radio-mast-radio-mast-api-api
+  name: Radio Mast Radio Mast API API
+  description: The Radio Mast API API from Radio Mast — 1 operation(s) for radio mast api.
+  humanURL: https://www.radiomast.io/docs/api/
+  baseURL: https://api.radiomast.io/v1
+  tags:
+  - Radio Mast API
+  properties:
+  - type: OpenAPI
+    url: openapi/radio-mast-radio-mast-api-api-openapi.yml
+  - type: Documentation
+    url: https://www.radiomast.io/docs/api/
+- aid: radio-mast:radio-mast-radio-stations-api
+  name: Radio Mast Radio Stations API
+  description: The Radio Stations API from Radio Mast — 1 operation(s) for radio stations.
+  humanURL: https://www.radiomast.io/docs/api/
+  baseURL: https://api.radiomast.io/v1
+  tags:
+  - Radio Stations
+  properties:
+  - type: OpenAPI
+    url: openapi/radio-mast-radio-stations-api-openapi.yml
+  - type: Documentation
+    url: https://www.radiomast.io/docs/api/
+- aid: radio-mast:radio-mast-radio-streams-api
+  name: Radio Mast Radio Streams API
+  description: The Radio Streams API from Radio Mast — 2 operation(s) for radio streams.
+  humanURL: https://www.radiomast.io/docs/api/
+  baseURL: https://api.radiomast.io/v1
+  tags:
+  - Radio Streams
+  properties:
+  - type: OpenAPI
+    url: openapi/radio-mast-radio-streams-api-openapi.yml
+  - type: Documentation
+    url: https://www.radiomast.io/docs/api/
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
