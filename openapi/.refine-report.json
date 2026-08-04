@@ -1,0 +1,22 @@
+{
+  "provider": "radio-mast",
+  "sources": [
+    "radio-mast-analytics-api-openapi.yml",
+    "radio-mast-listener-pools-api-openapi.yml",
+    "radio-mast-radio-mast-api-api-openapi.yml",
+    "radio-mast-radio-stations-api-openapi.yml",
+    "radio-mast-radio-streams-api-openapi.yml"
+  ],
+  "outputs": [
+    "radio-mast-analytics-api-openapi.yml",
+    "radio-mast-listener-pools-api-openapi.yml",
+    "radio-mast-radio-mast-api-api-openapi.yml",
+    "radio-mast-radio-stations-api-openapi.yml",
+    "radio-mast-radio-streams-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
