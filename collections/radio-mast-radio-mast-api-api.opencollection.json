@@ -1,0 +1,37 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Radio Mast Analytics Radio Mast API API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "Authorization",
+      "value": "{{Authorization}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Radio Mast API",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List available API resources",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.radiomast.io/v1/"
+          },
+          "docs": "List available API resources"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

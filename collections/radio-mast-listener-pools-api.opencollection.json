@@ -1,0 +1,37 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Radio Mast Analytics Listener Pools API",
+    "version": "1.0"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "Authorization",
+      "value": "{{Authorization}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Listener Pools",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List listener pools",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.radiomast.io/v1/listener-pools/"
+          },
+          "docs": "List listener pools"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
