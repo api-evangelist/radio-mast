@@ -1,0 +1,26 @@
+slug: radio-mast
+provider: Radio Mast
+generated_by: planning/capability-mapping/scripts/classify_capabilities.py
+model: claude-opus-5
+frame:
+- Media, Entertainment & Telecom Content
+min_confidence: 0.7
+capability_model:
+  source: https://github.com/vincentmakes/turbo-ea-capabilities
+  license: CC-BY-4.0
+  attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
+    CC BY 4.0
+  notice: NOTICE
+edge_count: 1
+edges:
+- tag: Analytics
+  spec_file: radio-mast-analytics-api-openapi.yml
+  capability_id: BC-3770
+  capability_id_l1: BC-3770
+  capability_name: Audience Measurement & Insights Management
+  confidence: 0.78
+  evidence: GET /analytics/listener-sessions/time-series/ "Listener session time-series analytics"; "Aggregate
+    listener session analytics"; "Listener analytics reports"
+  reason: Listener session time-series, aggregates and reports are audience/listenership measurement and
+    insight for a streaming radio service. L1 Audience Measurement & Insights is clear; whether this is
+    telemetry capture, census measurement or performance analytics is not resolved, so no L2.

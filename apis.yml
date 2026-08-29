@@ -42,6 +42,9 @@ modified: '2026-05-19'
 url: https://raw.githubusercontent.com/api-evangelist/radio-mast/refs/heads/main/apis.yml
 specificationVersion: '0.23'
 common:
+  - type: CapabilityMap
+    url: capabilities/radio-mast-capability-edges.yml
+    name: Radio Mast Business Capability Map
   - type: AgenticAccess
     url: agentic-access/radio-mast-agentic-access.yml
   - type: DomainSecurity
