@@ -4,6 +4,17 @@ description: >-
   The Radio Mast API allows you to integrate Radio Mast functionality into your app or website, including streaming
   network management, stream monitoring, listener analytics, and encoder credentials.
 type: Index
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: true
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - openapi
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: self-serve
