@@ -1,8 +1,7 @@
 aid: radio-mast
 name: Radio Mast
-description: >-
-  The Radio Mast API allows you to integrate Radio Mast functionality into your app or website, including streaming
-  network management, stream monitoring, listener analytics, and encoder credentials.
+description: The Radio Mast API allows you to integrate Radio Mast functionality into your app or website,
+  including streaming network management, stream monitoring, listener analytics, and encoder credentials.
 type: Index
 deliveryModel:
   model: unknown
@@ -33,31 +32,31 @@ position: Consuming
 access: 3rd-Party
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/radio-mast.png
 tags:
-  - Radio
-  - Streaming
-  - Analytics
-  - Audio
-  - Broadcasting
+- Radio
+- Streaming
+- Analytics
+- Audio
+- Broadcasting
 created: '2025-02-12'
-modified: '2026-05-19'
+modified: '2026-09-16'
 url: https://raw.githubusercontent.com/api-evangelist/radio-mast/refs/heads/main/apis.yml
 specificationVersion: '0.23'
 common:
-  - type: CapabilityMap
-    url: capabilities/radio-mast-capability-edges.yml
-    name: Radio Mast Business Capability Map
-  - type: AgenticAccess
-    url: agentic-access/radio-mast-agentic-access.yml
-  - type: DomainSecurity
-    url: security/radio-mast-domain-security.yml
-  - type: Authentication
-    url: authentication/radio-mast-authentication.yml
-  - type: GitHubOrganization
-    url: https://github.com/radiomastinc
-  - type: LinkedIn
-    url: https://www.linkedin.com/company/radiomast
-  - url: https://www.radiomast.io/blog
-    type: Blog
+- type: CapabilityMap
+  url: capabilities/radio-mast-capability-edges.yml
+  name: Radio Mast Business Capability Map
+- type: AgenticAccess
+  url: agentic-access/radio-mast-agentic-access.yml
+- type: DomainSecurity
+  url: security/radio-mast-domain-security.yml
+- type: Authentication
+  url: authentication/radio-mast-authentication.yml
+- type: GitHubOrganization
+  url: https://github.com/radiomastinc
+- type: LinkedIn
+  url: https://www.linkedin.com/company/radiomast
+- url: https://www.radiomast.io/blog
+  type: Blog
 apis:
 - aid: radio-mast:radio-mast-analytics-api
   name: Radio Mast Analytics API
@@ -84,7 +83,7 @@ apis:
   - type: Documentation
     url: https://www.radiomast.io/docs/api/
 - aid: radio-mast:radio-mast-radio-mast-api-api
-  name: Radio Mast Radio Mast API API
+  name: Radio Mast Radio Mast API
   description: The Radio Mast API API from Radio Mast — 1 operation(s) for radio mast api.
   humanURL: https://www.radiomast.io/docs/api/
   baseURL: https://api.radiomast.io/v1
@@ -120,5 +119,5 @@ apis:
   - type: Documentation
     url: https://www.radiomast.io/docs/api/
 maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+- FN: Kin Lane
+  email: kin@apievangelist.com
