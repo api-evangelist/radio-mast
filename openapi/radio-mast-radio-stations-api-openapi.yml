@@ -1,6 +1,6 @@
-openapi: 3.0.3
+openapi: 3.2.0
 info:
-  title: Radio Mast Analytics Radio Stations API
+  title: Radio Mast Radio Stations API
   description: The Radio Mast API allows you to integrate Radio Mast functionality into your app or website, including streaming network management, stream monitoring, listener analytics, and encoder credentials.
   version: '1.0'
   contact:
@@ -22,6 +22,8 @@ paths:
       responses:
         '200':
           description: List of radio stations
+      operationId: getRadiostations
+      x-operation-id-source: derived
 components:
   securitySchemes:
     ApiKeyAuth:

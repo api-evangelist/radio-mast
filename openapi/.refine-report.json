@@ -1,11 +1,7 @@
 {
   "provider": "radio-mast",
   "sources": [
-    "radio-mast-analytics-api-openapi.yml",
-    "radio-mast-listener-pools-api-openapi.yml",
-    "radio-mast-radio-mast-api-api-openapi.yml",
-    "radio-mast-radio-stations-api-openapi.yml",
-    "radio-mast-radio-streams-api-openapi.yml"
+    "_original/radio-mast-openapi.yml"
   ],
   "outputs": [
     "radio-mast-analytics-api-openapi.yml",
@@ -17,6 +13,18 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "radio-mast-openapi.yml: upgraded openapi 3.0.3 -> OpenAPI 3.2.0",
+    "radio-mast-openapi.yml: tagged paths GET / -> Radio Mast API",
+    "radio-mast-openapi.yml: declared missing tag: Radio Mast API",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "radio-mast-analytics-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "radio-mast-listener-pools-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "radio-mast-radio-mast-api-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "radio-mast-radio-stations-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "radio-mast-radio-streams-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
