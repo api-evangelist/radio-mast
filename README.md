@@ -1,4 +1,4 @@
-# Radio Mast (radio-mast)
+# Radio Mast
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,56 +66,123 @@
 
 The Radio Mast API allows you to integrate Radio Mast functionality into your app or website, including streaming network management, stream monitoring, listener analytics, and encoder credentials.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/radio-mast/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/radio-mast/refs/heads/main/apis.yml)
+**Areas:** Radio · Streaming · Analytics · Audio · Broadcasting
 
-## Scope
+## Radio Mast on APIs.io
 
-- **Type:** Index
-- **Position:** Consumer
-- **Access:** 3rd-Party
+Everything profiled for Radio Mast is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/radio-mast/](https://apis.io/providers/radio-mast/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (5)
 
-- Radio
-- Streaming
-- Analytics
-- Audio
-- Broadcasting
+- [Radio Mast Analytics API](https://apis.io/apis/radio-mast/radio-mast-analytics-api/) — The Analytics API from Radio Mast — 3 operation(s) for analytics.
+- [Radio Mast Listener Pools API](https://apis.io/apis/radio-mast/radio-mast-listener-pools-api/) — The Listener Pools API from Radio Mast — 1 operation(s) for listener pools.
+- [Radio Mast Radio Mast API](https://apis.io/apis/radio-mast/radio-mast-radio-mast-api-api/) — The Radio Mast API API from Radio Mast — 1 operation(s) for radio mast api.
+- [Radio Mast Radio Stations API](https://apis.io/apis/radio-mast/radio-mast-radio-stations-api/) — The Radio Stations API from Radio Mast — 1 operation(s) for radio stations.
+- [Radio Mast Radio Streams API](https://apis.io/apis/radio-mast/radio-mast-radio-streams-api/) — The Radio Streams API from Radio Mast — 2 operation(s) for radio streams.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2025-02-12
-- **Modified:** 2026-05-19
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### Radio Mast
+Which operations an agent can call, which act, and which need a human in the loop.
 
-The Radio Mast API allows you to integrate Radio Mast functionality into your app or website, including streaming network management, stream monitoring, listener analytics, and encoder credentials.
+- [Radio Mast Agentic Access](https://apis.io/agentic-access/radio-mast/radio-mast-agentic-access/)
 
-- **Human URL:** [https://www.radiomast.io/docs/api/](https://www.radiomast.io/docs/api/)
-- **Base URL:** `https://api.radiomast.io/v1`
+#### Collections (6)
 
-#### Tags
+Postman and Open Collection request collections.
 
-- Radio
-- Streaming
-- Analytics
-- Broadcasting
+- [Radio Mast API](https://apis.io/collections/radio-mast/open-radio-mast/)
+- [Radio Mast Analytics API](https://apis.io/collections/radio-mast/open-radio-mast-analytics-api/)
+- [Radio Mast Analytics Listener Pools API](https://apis.io/collections/radio-mast/open-radio-mast-listener-pools-api/)
+- [Radio Mast Analytics Radio Mast API API](https://apis.io/collections/radio-mast/open-radio-mast-radio-mast-api-api/)
+- [Radio Mast Analytics Radio Stations API](https://apis.io/collections/radio-mast/open-radio-mast-radio-stations-api/)
+- [Radio Mast Analytics Radio Streams API](https://apis.io/collections/radio-mast/open-radio-mast-radio-streams-api/)
 
-#### Properties
+#### Security (2)
 
-- [Documentation](https://www.radiomast.io/docs/api/)
-- [OpenAPI](https://raw.githubusercontent.com/api-evangelist/radio-mast/refs/heads/main/openapi/radio-mast-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/radio-mast.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/radio-mast.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Authentication, trust centre, and vulnerability disclosure.
 
-## Common Properties
+- [Radio Mast Authentication](https://apis.io/security/radio-mast/radio-mast-authentication/)
+- [Radio Mast Domain Security](https://apis.io/security/radio-mast/radio-mast-domain-security/)
 
-- [GitHub Organization](https://github.com/radiomastinc)
-- [LinkedIn](https://www.linkedin.com/company/radiomast)
+#### Plans and pricing (1)
 
-## Maintainers
+Published plans, tiers and prices.
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+- [Radio Mast Plans Pricing](https://apis.io/plans/radio-mast/radio-mast-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Radio Mast Rate Limits](https://apis.io/rate-limits/radio-mast/radio-mast-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Radio Mast Finops](https://apis.io/finops/radio-mast/radio-mast-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://radiomast.io)
+- [Blog](https://www.radiomast.io/blog)
+- [GitHub](https://github.com/radiomastinc)
+
+## API Evangelist rating
+
+**Kin Score 23.9** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 44.1 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 23.8 |
+| Access clarity | 7.9 |
+
+**Agent readiness 20.7** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | na |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | na |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | na |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 11.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/radio-mast/](https://apis.io/providers/radio-mast/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Radio Mast: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/radio-mast/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
